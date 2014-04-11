@@ -102,15 +102,21 @@
   .center-on-mobiles {
     text-align: center !important;
   }
-  .hide-on-mobiles {
+  .hide-on-tablets {
     display: none !important;
   }
 }
 
+@media screen and (max-width: 350px) {
+	.hide-on-phones {
+		display: none !important;
+  }
+ }
 /* Expand the wrap a bit further on larger screens */
 @media screen and (min-width: 1180px) {
   .wider .grid {
     max-width: 1180px;
     margin: 0 auto;
   }
+  
 }

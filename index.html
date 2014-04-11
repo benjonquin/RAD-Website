@@ -20,16 +20,10 @@
 <body>
 <div class="wrapper">
 <header class="grid">
-	<img src="images/logo.png" alt="River Arts District" />
+	<img src="images/logo.png" alt="River Arts District" class="header-logo"/>
 	<h2>unique. eclectic. vibrant.</h2>
 	
-	<form class="form-wrapper cf">
-        <input type="text" placeholder="Search" required>
-        <button type="submit">Search</button>
-    </form>  
-	
-	
-	
+	<div class="header-right">
 	<!-- MAIN-NAVIGATION -->
 	<nav class="main-nav">
 		<ul>
@@ -37,11 +31,20 @@
 			<li><a href="#" title="About">About</a></li>
 			<li><a href="#" title="Artists">Artists</a></li>
 			<li><a href="#" title="Studio Stroll">Events</a></li>
-			<li hidden><a href="#" title="" hidden></a></li>
 		</ul>
 	</nav>
+	<form method="get" action="/search" class="search">
+		<input name="q" type="text" size="40" placeholder="Search..." />
+        <button type="submit" value="go" class="submit">
+			<span class="icon-mag" aria-hidden="true"><img src="images/icon-mag.png" alt="Search" class=""/></span>
+			<span class="is-vishidden">
+				Search
+			</span>
+		</button>
+    </form>  
+	
+	</div> <!--END RIGHT-->
 </header>
-	<hr>
 	
 	
 	
@@ -52,20 +55,20 @@
 
 	
 	<div class="image-slider grid">
-		<img src="images/weaving.jpg" alt="Weaving Threads" class="full-width"/>
+		<img src="images/weaving.jpg" alt="Weaving Threads" class="hide-on-phones"/>
 	</div>
 	
 	<!-- FEATURED ARTIST -->
-<div class=" featured grid whole border-cyan">
+<div class=" featured grid whole">
 	<div class="featured-artist unit two-thirds">
 		
 			<h3>Featured Artist</h3>
 			<h2>Karen Weihs</h2>
 			<p><a href="http://karenweihs.com/" title="">www.karenweihs.com</a></p>
-			<img src="images/karen-weihs.jpg" alt="Karen Weihs - Oil Painter" class="unit one-third border-cyan"/>
+			<img src="images/karen-weihs.jpg" alt="Karen Weihs - Oil Painter" class="unit one-third"/>
 		
-		<section class="unit two-thirds border-red">
-			<img src="images/featured-art.jpg" alt="Oil Painting of the Ocean" class="featured-art"/>
+		<section class="unit two-thirds ">
+			<img src="images/featured-art.jpg" alt="Oil Painting of the Ocean" class="featured-art whole"/>
 			<p>As a palette knife oil painter and colorist, I love to create images that depict endless visual space. Forsaking all details, I conjure patterns of light, air and reflection that feel ethereal and diffused. Layered pigments, contrasting colors and geometric shapes breathe life into my images, and while my landscapes are minimal in representational content, I find viewers often see the familiar in the abstract.</p>
 			<a href="" title="">View Full Profile</a>
 		</section>
@@ -91,7 +94,7 @@
 	<div class="push grid"></div>
 </div> <!-- END WRAPPER -->
 
-<footer class="grid">
+<footer class="grid icon-mag">
 	<nav class="footer-nav">
 		<ul>
 			<li><a href="#" title="Map and Directions">Maps</a></li>
@@ -101,7 +104,7 @@
 			<li hidden><a href="#" title="" hidden></a></li>
 		</ul>
 	</nav>
-	<section class="site-info contained">
+	<section class="site-info">
 	<p>&copy; 2014 River Arts District</p>
 	</section>
 </footer>
