@@ -1,0 +1,29 @@
+/***** FOOTER *****/
+.push {
+	height: 200px;
+	/*background: #efefef;*/
+}
+
+footer {
+	padding: 15px;
+	height: 120px;
+	color: #fff;
+	font-size: 12px;
+	background: rgba(103,49,38,1.0);
+}
+
+footer li {
+	display: inline-block;
+	margin: 10px 0;
+}
+
+footer a {
+	color: #fff;
+	text-decoration: none;
+	padding: 5px 15px;
+	margin: 5px 15px 5px 0;
+}
+
+.site-info {
+	padding: 30px 15px 0;
+}

@@ -1,0 +1,154 @@
+/***** HEADER *****/
+
+header {
+	background: rgba(255,255,255,0.7);
+}
+
+header img.header-logo {
+	float: left;
+	padding: 20px 0 20px 20px;
+}
+
+header h2 {
+	/*float: right;
+	min-width: 270px;*/
+	color: #e86e0c;
+	padding: 20px 15px;
+	text-align: right;
+}
+
+.header-right {
+	float: right;
+	margin: 30px 0 0;
+}
+
+/***** MAIN NAV *****/
+
+.main-nav {
+	float: left;
+	min-width: 250px;
+}
+
+.main-nav li {
+	display: inline-block;
+	margin: 10px 0;
+}
+
+.main-nav a {
+	padding: 5px 15px;
+	margin: 5px 18px 5px 0;
+	text-decoration: none;
+	color: #620b14;
+}
+
+.main-nav a:hover {
+	color: #9f1220;
+}
+
+a.current {
+	color: #e86e0c;
+}
+
+/***** SEARCH FORM *****/
+
+.search {
+	float: right;
+	margin: 5px 15px 15px;
+}
+
+.search input[type="text"] {
+	float: left;
+    background: url(search-white.png) no-repeat 10px 6px #fcfcfc;
+    border: 1px solid #d1d1d1;
+    font:  14px serif;
+    color: #bebebe;
+    width: 120px;
+    padding: 6px 15px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px 0 0 20px;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset;
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset;
+    -webkit-transition: all 0.7s ease 0s;
+    -moz-transition: all 0.7s ease 0s;
+    -o-transition: all 0.7s ease 0s;
+    transition: all 0.7s ease 0s;
+    }
+
+.search input[type="text"]:focus {
+    width: 200px;
+	color: #620b14;
+    }
+
+.search .submit {
+    float: left;    
+    border: 1px solid #c5c5c5;
+    height: 31px;
+    width: 50px;
+    padding: 0;
+    cursor: pointer;
+    font: 15px Arial, Helvetica;
+    color: #fafafa;
+    background-color: #c5c5c5;
+    background-image: linear-gradient(top, #999, #c5c5c5), /*url("../images/icon-mag.png")*/;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 0 20px 20px 0;      
+    text-shadow: 0 1px 0 rgba(0, 0 ,0, .3);
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.3) inset, 0 1px 0 #fff;
+}
+
+.icon-mag img {
+	float: left;
+	padding: 4px 0 0 13px;
+}
+
+.search .is-vishidden {
+	visibility: hidden;
+}
+ 
+.search .submit:hover,
+.search .submit:focus {       
+    background-color: #999;
+    background-image: linear-gradient(top, #666, #999);
+}   
+  
+.search .submit:active {
+    outline: 0;    
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;    
+}
+  
+.search .submit::-moz-focus-inner {
+    border: 0;
+}
+
+@media all and (max-width: 280px) {
+	header img.header-logo {
+		width: 100%;
+		padding: 15px 0;
+	}
+	
+	.header-right {
+		margin: 0;
+	}
+	
+	.main-nav {
+		width: 100%;
+	}
+	.main-nav li {
+		display: block;
+		text-align: center;
+		margin: 0;
+	}
+	.main-nav a  {
+		display: block;
+		margin: 0;
+		background: #fff;
+	}
+	
+	.search input[type="text"]:focus {
+    width: 145px;
+	}
+}
