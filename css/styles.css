@@ -53,3 +53,53 @@ html, body {
 .featured-content h2, .featured-content h3 {
 	color: #cf844f;
 }
+
+
+
+
+
+
+
+
+
+
+/***** ABOUT/HISTORY TIMELINE *****/
+
+
+.timeline-left {
+	width: 45%;
+	float: left;
+	padding: 15px;
+}
+
+.timeline-right {
+	width: 45%;
+	float: right;
+	padding: 15px;
+}
+
+.timeline-left h2 {
+	color: #cf844f;
+	padding-bottom: 20px;
+}
+
+.timeline-left h3, .timeline-right h3 {
+	color: #cf844f;
+	margin-top: 15px;
+}
+
+.timeline-left p, .timeline-right p {
+	margin-bottom: 10px;
+}
+
+.timeline-left img, .timeline-right img {
+	padding: 25px 0 25px 0;
+}
+
+.image-group {
+	text-align: center;
+}
+
+.title {
+	color: #7c373c;
+}
