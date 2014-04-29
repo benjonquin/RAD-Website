@@ -11,7 +11,7 @@ html, body {
 	background: #f5f5f5 url('../images/dust.png');
 }
 
-.wrapper {
+.wrap {
 	min-height: 100%;
 	height: auto !important;
 	height: 100%;
@@ -54,17 +54,25 @@ html, body {
 	color: #cf844f;
 }
 
+/* ABOUT */
 
+article {
+	margin: 20px 0 0 0;
+}
 
+article h1{
+	padding: 20px 10px 10px;
+}
 
-
+article p, article a {
+	padding: 10px;
+}
 
 
 
 
 
 /***** ABOUT/HISTORY TIMELINE *****/
-
 
 .timeline-left {
 	width: 45%;
